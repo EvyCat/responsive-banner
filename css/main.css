@@ -1,5 +1,4 @@
 html {
-  max-height: 500px;
   font-family: Georgia, serif;
 }
 
@@ -13,7 +12,7 @@ html {
   color: #fff;
 }
 
-.btn-ghost:hover{
+.btn-ghost:hover {
   background-color: #efefef;
   border-color: #efefef;
   color: #495562;
@@ -21,26 +20,30 @@ html {
 
 @media only screen and (min-width: 38em) {
 
-.btn-ghost {
-  float: right;
-}
+  .btn-ghost {
+    float: right;
+  }
 
 }
 
 @media only screen and (min-width: 60em) {
 
-.banner {
-  position: relative;
-  background-image: linear-gradient(rgba(73, 85, 98, 0););
-}
+  .banner {
+    position: relative;
+    max-height: 500px;
+    overflow: hidden;
+  }
 
-.banner-text {
-  position: absolute;
-  bottom: -35px;
-  background-color: transparent;
-}
+  .banner-text {
+    position: absolute;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, rgba(73, 85, 98, 0), rgba(73, 85, 98, .9));
+    width: 100%;
+  }
 
-.btn-ghost{
-  border-color: #fff;
-}
+  .btn-ghost {
+    border-color: #fff;
+    float: right;
+  }
+
 }
